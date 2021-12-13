@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+#off{
+    padding-bottom: 10vh;
+}
+main{
+    padding:5em;
+    min-height: 101vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+main>div{
+    position:relative;
+    min-height: 60px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.card{
+    transition: transform 3s!important;
+}
+
+main>div:nth-child(odd){
+    left: -100vw;
+    top: -100vw;
+}
+main>div:nth-child(even){
+    left: 100vw;
+    top: -100vw;
+}
+
+.card:nth-child(odd){
+    background-color: rgb(69, 32, 170);
+    transform: translate(100vw,100vw);
+}
+
+.card:nth-child(even){
+    background-color: rgb(9, 0, 32);
+    transform: translate(-100vw,100vw);
+}
+
