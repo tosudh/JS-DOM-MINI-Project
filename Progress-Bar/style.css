@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.importedGradient{
+
+  background: #F7F8F8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  gap: 50px;
+  font-size:2em;
+}
+#progress{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.page{
+  display: inline-flex;
+  justify-content:center;
+  align-items:center;
+  width:40px;
+  height:40px;
+  background-color: #fff;
+  color: #aaa;
+  border: 3px solid #aaa;
+  border-radius:50%;
+}
+.activePage{
+  border-color: #B91646;
+  color: #B91646;
+}
+.bar{
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #aaa;
+}
+.activeBar{
+  background-color: #B91646;
+}
+
+button{
+  display: inline-block;
+  padding:0.5em 1em;
+  border-radius: 8px;
+  border:none;
+  margin: 0 2em;
+  font-size: 1.2em;
+  background-color:#aaa;
+  color:#fff;
+  cursor:no-drop;
+}
+.activeBtn{
+  background-color:#B91646;
+  cursor:grab;
+}
+
+
+
+#banner{
+  font-size:4em;
+  font-weight: 500;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  text-align:center;
+  color:#B91646;
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+}
