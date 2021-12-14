@@ -45,40 +45,15 @@ main {
   color: #B91646;
 }
 .bar{
-  display: inline-flex;
+  display: inline-block;
   width: 50px;
   height: 3px;
   background-color: #aaa;
 }
 .activeBar{
-  /* background-color: #B91646; */
-}
-.trx{
-  display: inline-block;
-  width: 0px;
-  height: 3px;
-  position: relative;
-
-}
-.activeBar .trx{
-  display: inline-block;
   background-color: #B91646;
-  width: 50px;
-  height: 3px;
-  animation-name: progress;
-  animation-duration: 0.2s;
 }
-@keyframes progress {
-  0%   {
-    width: 0%;
-  }
-  50%   {
-    width: 50%;
-  }
-  100%   {
-    width: 100%;
-  }
-}
+
 button{
   display: inline-block;
   padding:0.5em 1em;
@@ -108,5 +83,3 @@ button{
   position: absolute;
   top: 10%;
 }
-
-
